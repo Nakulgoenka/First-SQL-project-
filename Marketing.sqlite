@@ -1,0 +1,21 @@
+ SELECT *FROM users
+where birthday between '1980-01-01'and '1989-12-31';
+
+SELECT email, created_at FROM users
+where created_at <='2017-04-30';
+
+SELECT email FROM users
+where test= 'bears';
+
+SELECT email
+FROM users
+WHERE campaign LIKE 'BBB%';
+
+SELECT email
+FROM users
+WHERE campaign LIKE '%-2';
+
+SELECT email
+FROM users
+WHERE campaign IS NOT NULL
+  AND test IS NOT NULL;
